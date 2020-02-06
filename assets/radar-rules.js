@@ -978,6 +978,28 @@
             },
         ],
     },
+    '163.com': {
+        _name: '网易',
+        ds: [
+            {
+                title: '网易大神',
+                docs: 'https://docs.rsshub.app/game.html#wang-yi-da-shen',
+                source: '/user/:id',
+                target: '/netease/ds/:id',
+            },
+        ],
+    },
+    'suzhou.gov.cn': {
+        _name: '苏州市政府',
+        www: [
+            {
+                title: '政府新闻',
+                docs: 'https://docs.rsshub.app/government.html#su-zhou-shi-ren-min-zheng-fu',
+                source: '/szsrmzf/:uid/nav_list.shtml',
+                target: '/gov/suzhou/news/:uid',
+            },
+        ],
+    },
     'mqube.net': {
         _name: 'MQube',
         www: [
@@ -1015,6 +1037,29 @@
                 docs: 'https://docs.rsshub.app/traditional-media.html#ri-ben-jing-ji-xin-wen',
                 source: '/',
                 target: '/nikkei/index',
+            },
+        ],
+    },
+    'last.fm': {
+        _name: 'Last.fm',
+        www: [
+            {
+                title: '用户播放记录',
+                docs: 'https://docs.rsshub.app/multimedia.html#last-fm',
+                source: ['/user/:user', '/user/:user/*'],
+                target: '/lastfm/recent/:user',
+            },
+            {
+                title: '用户 Love 记录',
+                docs: 'https://docs.rsshub.app/multimedia.html#last-fm',
+                source: ['/user/:user', '/user/:user/*'],
+                target: '/lastfm/loved/:user',
+            },
+            {
+                title: '站内 Top 榜单',
+                docs: 'https://docs.rsshub.app/multimedia.html#last-fm',
+                source: '/charts',
+                target: '/lastfm/top',
             },
         ],
     },
